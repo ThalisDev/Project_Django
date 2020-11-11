@@ -1,0 +1,283 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}"/>
+
+    <title>Teste Resh</title>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar alinhamento-navbar color-navbar fixed-top">
+      <div class="block-navbar">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#sec1"><h3>HOME</h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sec2"><h3>PARTICIPANTES</h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sec3"><h3>LGPD</h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sec4"><h3>CADASTRO</h3></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Fim Navbar -->
+
+  <!-- Seçao 1 -->
+  <div id="sec1">
+    <div class="container">
+  <div class="row">
+    <div class="col-sm" align='center' style="padding-top:150px; padding-right:320px; position: relative;">
+        <img src="{% static "images/work3.png" %}" class="img-fluid" alt="Imagem responsiva" style="width: 500px; height: 450px;" alt="Img1">
+    </div>
+    <div class="col-sm" align='center' style="margin-top:350px; float: right; margin-left:-150px;position: relative;">
+      <h1>THALIS URIEL CHOEIRI MICHELINO</h1>
+    </div>
+  </div>
+</div>
+  <!-- Fim Seçao 1 -->
+
+  <!-- Seçao 2 -->
+  <table align="center">
+  <a name="sec2"></a>
+  <tr>
+  <td>
+    <div style="width:700px; height:auto; margin-left: auto; margin-right: auto;">
+    <h2>Conheça quem já está participando!</h2>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    oluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+    id est laborum.
+    </div>
+    <div>
+    <br><br>
+      <h2>{{object.nome}}</h2>
+    </div>
+  </td>
+  <td><img class="img-fluid" alt="Imagem responsiva" src="{% static "images/Elementos-02.png" %}" style="margin-top:-97px;width:300px; height:650px;" alt="Img2"></td>
+  </tr>
+  <tr>
+    <td>
+      <div align='center'>
+        <a href="#sec4" class="btn btn-success btn-lg active" role="button" aria-pressed="true">Quero Participar!</a>
+    </div>
+    </td>
+  </tr>
+  </table>
+  <!-- fim Seçao 2 -->
+
+  <!--Seção 3-->
+  <div style="background-color: darkred; height:550px;">
+  <a name="sec3"></a>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm" align='center' style="margin-top:200px; float:left; margin-right:auto; position: relative;">
+        <p>LEI GERAL DE PROTEÇÃO DE DADOS</p>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h5>
+    </div>
+    <div class="col-sm" align='center' style="margin-top:70px; float: right; margin-left:auto; position: relative;">
+      <!--CARROUSEL-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-75" src="{% static "images/lorem.png" %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-75" src="{% static "images/lorem.png" %}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-75" src="{% static "images/lorem.png" %}" alt="Third slide">
+          </div>
+          <br><br>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!--FIM CARROUSEL--->
+    </div>
+  </div>
+</div>
+</div>
+
+<!--SEÇÃO 4-->
+<div class="row no-gutters" style="margin-top: -7px; background-color: #00073F;">
+<a name="sec4"></a>
+  <div class="col-6"> 
+  <img class="img-fluid" alt="Imagem responsiva" src="{% static "images/Elementos-05.png" %}">
+  </div>
+  <div class="col-6">
+    <form action="{% url 'addUser' %}" method="post">
+      <div style="width: 60%; margin-left: 15%;">
+      <br><br><br>
+      <h6 style="font-size: 56px; color:white;font-weight: bold;">Participe!</h6>
+      <h5>Preencha o formulário abaixo e ganhe!</h5>
+      {% csrf_token %}
+      <ul class="messages">
+        {% for msg in messages %}
+          <li>
+            <div class="alert alert-{{msg.level_tag}}" role="alert">
+              {{msg.messages}}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+      {{form.nome}}
+      <br>
+      {{form.telefone}}
+      <br>
+      {{form.email}}
+      <br>
+     {{form.atuacao}}
+      <h5>{{form.termos_servico}} Concordo com os termos de privacidade e serviço!</h5>
+      <input type="submit" class="btn" value="Registrar" style="background-color:#F83217"/>
+      </div>
+    </form>
+  </div>
+</div>
+<!--FIM SEÇÃO 4-->
+
+<!--INICIO RODAPÉ-->
+<footer class="page-footer font-small indigo text-light" style="background-color:#1C1C1C;">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left text-light">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+<br><br>
+        <!-- Links -->
+
+        <ul class="list-unstyled">
+          <li>
+            <h3>+55 17 3353-0833</h3>
+          </li>
+          <li>
+            <h3>atendimento@resh.com.br</h3>
+          </li>
+          <li>
+            <h3>Av. Dr. Aniloel Nazareth,
+            5650 São José do Rio preto/SP</h3>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+<br>
+        <!-- Links -->
+
+        <ul class="list-unstyled">
+          <li>
+            <a>HOME</a>
+          </li>
+          <li>
+            <a>QUEM SOMOS</a>
+          </li>
+          <li>
+            <a>PRODUTOS</a>
+          </li>
+          <li>
+            <a>SERVIÇOS</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+<br>
+        <!-- Links -->
+
+        <ul class="list-unstyled">
+          <li>
+            <a>BLOG</a>
+          </li>
+          <li>
+            <a>CONTATO</a>
+          </li>
+          <li>
+            <a>CALCULADORA LGPD</a>
+          </li>
+          <li>
+            <a>POLITICA DE PRIVACIDADE</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mx-auto">
+
+        <!-- Links -->
+        <div style="margin-top: 10%; margin-left:10%; width: 350px;">
+        <h7 style="font-size:14px; color:white;">Assine nossa newletter e 
+        receba novidades exclusivas</h7><br>
+        <nav class="navbar">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="E-mail" aria-label="Pesquisar">
+            <button type="submit" class="btn btn-outline-danger">Enviar</button>
+          </form>
+        </nav>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+  <!-- Copyright -->
+  <hr>
+  <div class="footer-copyright text-center text-light py-3">© 2020 Copyright
+    <a> RESH CYBERDEFENSE</a>
+  </div>
+  <!-- Copyright -->
+
+<!--FIM FOOTER-->
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
